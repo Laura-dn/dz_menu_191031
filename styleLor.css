@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h3:first-child {
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+section {padding-left: 120px;}
+
+aside {
+    width: 70px;
+    height: 100vh;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    background-color: darkgray;
+    overflow: hidden;
+    transition: width 1s linear;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+div {
+    padding: 20px 10px;
+    white-space: nowrap;
+    transition: width 1s linear;
+}
+
+span {
+    position: absolute;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 1.5s linear;
+}
+
+aside:hover {
+    width: 150px;
+    text-align: left;
+}
+
+aside:hover span {
+    position: static;
+    opacity: 1;
+}
+
+aside:hover div {width: 100%;}
+
+div:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.createSymbol {text-shadow: black 0 0 1px;}
